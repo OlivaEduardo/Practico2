@@ -1,3 +1,5 @@
+//Aqui se declaran las operaciones matematicas a utilizar
+
 #ifndef OPERACIONES_MATEMATICAS_H
 #define OPERACIONES_MATEMATICAS_H
 

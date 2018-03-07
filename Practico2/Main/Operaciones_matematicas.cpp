@@ -1,3 +1,4 @@
+//Aqui se definen las operaciones matematicas a utilizar
 
 #define PI (3.141592)
 
