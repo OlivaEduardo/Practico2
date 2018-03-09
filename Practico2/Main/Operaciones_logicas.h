@@ -8,5 +8,4 @@ void swap(int* ptrx, int* ptry);
 void swap(double* ptrx, double* ptry);
 
 
-
 #endif // !OP_LOGICAS_H
