@@ -3,5 +3,6 @@
 #ifndef PREPROCESADOR_H
 #define PREPROCESADOR_H
 
+void Concatenacion(char var1, char var2);
 
 #endif // !PREPROCESADOR_H
