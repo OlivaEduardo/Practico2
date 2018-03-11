@@ -8,3 +8,4 @@ void Concatenacion(char var1, char var2)
 	char nombres[] = VARNAMES(var1, var2);
 	printf("El nombre de las variables es: %s \n", nombres);
 }
+
