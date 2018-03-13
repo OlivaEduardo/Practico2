@@ -7,6 +7,6 @@ void Swap(int* ptrx, int* ptry);
 
 void Swap(double* ptrx, double* ptry);
 
-void Swap(char cadena1[], const int longCadena1, char cadena2[], const int longCadena2);
+void Swap(char str1[], const int str1length, char str2[], const int str2length);
 
 #endif // !OP_LOGICAS_H
