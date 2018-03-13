@@ -5,5 +5,6 @@
 
 void Concatenacion(char var1, char var2);
 
+void Imprimir(char cadena[]);
 
 #endif // !PREPROCESADOR_H
