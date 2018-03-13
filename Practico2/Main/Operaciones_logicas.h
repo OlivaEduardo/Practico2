@@ -1,4 +1,4 @@
-//Aqui se declararan las operaciones de intercambio de variables
+//Variable swapping are declared here
 
 #ifndef OP_LOGICAS_H
 #define OP_LOGICAS_H

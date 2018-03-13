@@ -1,4 +1,4 @@
-//Aqui se definiran las operaciones de intercambio de variables
+//Variable swapping operations are defined here
 #include <iostream>
 
 void Swap(int* ptrx, int* ptry)
@@ -15,16 +15,16 @@ void Swap(double* ptrx, double* ptry)
 	*ptry = aux;
 }
 
-void Swap(char cadena1[], const int longCadena1, char cadena2[], const int longCadena2)
+void Swap(char str1[], const int str1length, char str2[], const int str2length)
 {
-	if (longCadena1 == longCadena2)
+	if (str1length == str2length)
 	{
 		char aux = 0;
-		for (int i = 0; i < longCadena1; i++)
+		for (int i = 0; i < str1length; i++)
 		{
-			aux = cadena1[i];
-			cadena1[i] = cadena2[i];
-			cadena2[i] = aux;
+			aux = str1[i];
+			str1[i] = str2[i];
+			str2[i] = aux;
 		}
 	}
 	else

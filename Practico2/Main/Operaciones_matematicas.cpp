@@ -1,20 +1,20 @@
-//Aqui se definen las operaciones matematicas a utilizar
+//Math operations are defined here
 
 #define PI (3.141592)
 
-double Cuadrado(double x)
+double Square(double x)
 {
 	return x * x;
 }
 
-int Suma(int x, int y)
+int Sum(int x, int y)
 {
 	return x + y;
 }
 
-double AreaCirc(double r)
+double CircleArea(double r)
 {
-	return PI * Cuadrado(r);
+	return PI * Square(r);
 }
 
 int Max(int x, int y)

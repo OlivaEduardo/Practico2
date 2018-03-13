@@ -1,13 +1,13 @@
-//Aqui se definiran las operaciones binarias
+//Binary operations are defined here
 
-int DesplazamientoIzquierda(int x)
+int LeftDisplacement(int x)
 {
-	return x << 2; //Desplaza 2 bits a izquierda
+	return x << 2; //2 bits left displacement
 }
 
-int DesplazamientoDerecha(int x)
+int rightDisplacement(int x)
 {
-	return x >> 2; //Desplaza 2 bits a derecha
+	return x >> 2; //2 bits right displacement
 }
 
 int BinAND(int x, int y)

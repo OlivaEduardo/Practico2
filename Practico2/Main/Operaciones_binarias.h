@@ -1,11 +1,11 @@
-//Aqui se declararan las operaciones binarias
+//Binary operations are declared here
 
 #ifndef OP_BINARIAS_H
 #define OP_BINARIAS_H
 
-int DesplazamientoIzquierda(int x);
+int LeftDisplacement(int x);
 
-int DesplazamientoDerecha(int x);
+int rightDisplacement(int x);
 
 int BinAND(int x, int y);
 

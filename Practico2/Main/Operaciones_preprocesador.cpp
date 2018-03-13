@@ -1,15 +1,15 @@
-// Aqui se realizara la definicion de concatenacion de nombres de variables e impresion de literal.
+// Variable concatenation operation is defined here
 #include <iostream>
 
 #define VARNAMES(NAME1, NAME2)  ( #NAME1 ## #NAME2 )
 
-void Concatenacion(char var1, char var2)
+void Concatenation(char var1, char var2)
 {
-	char nombres[] = VARNAMES(var1, var2);
-	std::cout << "El nombre de las variables concatenadas es: " << nombres << "\n";
+	char names[] = VARNAMES(var1, var2);
+	std::cout << "El nombre de las variables concatenadas es: " << names << "\n";
 }
 
-void Imprimir(char cadena[])
+void Print(char str[])
 {
-	std::cout << "Valor ingresado: " << cadena << "\n";
+	std::cout << "Valor ingresado: " << str << "\n";
 }

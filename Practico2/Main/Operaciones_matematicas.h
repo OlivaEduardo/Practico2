@@ -1,13 +1,13 @@
-//Aqui se declaran las operaciones matematicas a utilizar
+//Math operations are declared here
 
 #ifndef OPERACIONES_MATEMATICAS_H
 #define OPERACIONES_MATEMATICAS_H
 
-double Cuadrado(double x);
+double Square(double x);
 
-int Suma(int x, int y);
+int Sum(int x, int y);
 
-double AreaCirc(double r);
+double CircleArea(double r);
 
 int Max(int x, int y);
 
