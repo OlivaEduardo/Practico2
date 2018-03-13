@@ -5,7 +5,7 @@
 
 int LeftDisplacement(int x);
 
-int rightDisplacement(int x);
+int RightDisplacement(int x);
 
 int BinAND(int x, int y);
 

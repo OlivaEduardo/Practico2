@@ -5,7 +5,7 @@ int LeftDisplacement(int x)
 	return x << 2; //2 bits left displacement
 }
 
-int rightDisplacement(int x)
+int RightDisplacement(int x)
 {
 	return x >> 2; //2 bits right displacement
 }
