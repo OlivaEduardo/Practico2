@@ -1,18 +1,18 @@
-//Definicion de comparacion de cadenas de caracteres
+//String comparison is defined here
 
-bool Comparacion(char Cadena1[], char Cadena2[])
+bool Compare(char str1[], char str2[])
 {
-	if (sizeof(Cadena1) != sizeof(Cadena2)) //Comparamos el espacio de memoria de ambos, si es distinto devolvemos false
+	if (sizeof(str1) != sizeof(str2)) //Compare both memory sizes, if they are different, return false
 	{
 		return false;
 	}
 	else
 	{
-		int length = (sizeof(Cadena1) / sizeof(char)); //Obtenemos la cantidad de caracteres de la cadena
+		int length = (sizeof(str1) / sizeof(char)); //Get characters number
 
 		for (size_t i = 0; i < length; i++)
 		{
-			if (Cadena1[i] != Cadena2[i])
+			if (str1[i] != str2[i])
 			{
 				return false;
 			}
