@@ -1,7 +1,10 @@
 //String comparison is defined here
+#include "Utils.h"
 
-bool Compare(char str1[], char str2[])
+bool Compare(char str1[], char str2[], bool track)
 {
+	if (track)
+		TRACE();
 	if (sizeof(str1) != sizeof(str2)) //Compare both memory sizes, if they are different, return false
 	{
 		return false;

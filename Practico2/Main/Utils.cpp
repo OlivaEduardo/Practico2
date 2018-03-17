@@ -12,7 +12,7 @@ void logWarning(const char* msg)
 	std::cout << "Error: " << msg << "\n";
 }
 
-void logTrace(char* function)
+void logTrace(const char* file, unsigned int line, const char* function)
 {
-	std::cout << "Funcion " << function << " invocada.\n";
+	std::cout << "Funcion invocada: " << function << "\nArchivo: " << file << "\nLinea: " << line << "\n";
 }

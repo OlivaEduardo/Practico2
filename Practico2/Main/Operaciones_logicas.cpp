@@ -4,20 +4,26 @@
 
 #define SWAP(x, y, aux) (aux) = (x); (x) = (y); (y) = (aux);
 
-void Swap(int* ptrx, int* ptry)
+void Swap(int* ptrx, int* ptry, bool track)
 {
+	if (track)
+		TRACE();
 	int aux = 0;
 	SWAP(*ptrx, *ptry, aux);
 }
 
-void Swap(double* ptrx, double* ptry)
+void Swap(double* ptrx, double* ptry, bool track)
 {
+	if (track)
+		TRACE();
 	double aux = 0.0;
 	SWAP(*ptrx, *ptry, aux);
 }
 
-void Swap(char str1[], const int str1length, char str2[], const int str2length)
+void Swap(char str1[], const int str1length, char str2[], const int str2length, bool track)
 {
+	if (track)
+		TRACE();
 	if (str1length == str2length)
 	{
 		char aux = 0;
