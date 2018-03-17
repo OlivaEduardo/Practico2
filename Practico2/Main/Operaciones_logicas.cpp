@@ -1,18 +1,19 @@
 //Variable swapping operations are defined here
 #include <iostream>
+#include "Utils.h"
+
+#define SWAP(x, y, aux) (aux) = (x); (x) = (y); (y) = (aux);
 
 void Swap(int* ptrx, int* ptry)
 {
-	int aux = *ptrx;
-	*ptrx = *ptry;
-	*ptry = aux;
+	int aux = 0;
+	SWAP(*ptrx, *ptry, aux);
 }
 
 void Swap(double* ptrx, double* ptry)
 {
-	double aux = *ptrx;
-	*ptrx = *ptry;
-	*ptry = aux;
+	double aux = 0.0;
+	SWAP(*ptrx, *ptry, aux);
 }
 
 void Swap(char str1[], const int str1length, char str2[], const int str2length)
@@ -28,6 +29,5 @@ void Swap(char str1[], const int str1length, char str2[], const int str2length)
 		}
 	}
 	else
-		std::cout << "Error al procesar la operacion \n";
+		ERROR(3, "Error al procesar la operacion");
 }
-

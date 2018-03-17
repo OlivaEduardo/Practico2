@@ -4,6 +4,8 @@
 
 #define FUNCTION_NAME(NAME) (#NAME); //Converts function name to string
 #define ERROR(code, msg) logError(__FILE__, __LINE__, code, msg); //Macro to call the logError function
+#define WARNING(msg) logWarning(msg); //Macro to call the logWarning function
+
 
 void logError(const char* file, unsigned int line, int code, const char* msg);
 
