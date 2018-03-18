@@ -1,22 +1,29 @@
 //Variable swapping operations are defined here
 #include <iostream>
+#include "Utils.h"
 
-void Swap(int* ptrx, int* ptry)
+#define SWAP(x, y, aux) (aux) = (x); (x) = (y); (y) = (aux);
+
+void Swap(int* ptrx, int* ptry, bool track)
 {
-	int aux = *ptrx;
-	*ptrx = *ptry;
-	*ptry = aux;
+	if (track)
+		TRACE();
+	int aux = 0;
+	SWAP(*ptrx, *ptry, aux);
 }
 
-void Swap(double* ptrx, double* ptry)
+void Swap(double* ptrx, double* ptry, bool track)
 {
-	double aux = *ptrx;
-	*ptrx = *ptry;
-	*ptry = aux;
+	if (track)
+		TRACE();
+	double aux = 0.0;
+	SWAP(*ptrx, *ptry, aux);
 }
 
-void Swap(char str1[], const int str1length, char str2[], const int str2length)
+void Swap(char str1[], const int str1length, char str2[], const int str2length, bool track)
 {
+	if (track)
+		TRACE();
 	if (str1length == str2length)
 	{
 		char aux = 0;
@@ -28,6 +35,5 @@ void Swap(char str1[], const int str1length, char str2[], const int str2length)
 		}
 	}
 	else
-		std::cout << "Error al procesar la operacion \n";
+		ERROR(3, "Error al procesar la operacion");
 }
-
