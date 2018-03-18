@@ -1,5 +1,5 @@
 //Binary operations are defined here
-#include "utils.h";
+#include "Utils.h";
 
 int LeftDisplacement(int x, bool trace)
 {
