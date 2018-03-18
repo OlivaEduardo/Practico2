@@ -5,6 +5,6 @@
 
 void Concatenation(char var1, char var2, bool track);
 
-void Print(char cadena[], bool track);
+void Print(char str[], bool track);
 
 #endif // !PREPROCESADOR_H
